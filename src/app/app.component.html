@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
   <div class="header">{{ title }} 
   </div>
@@ -7,3 +8,15 @@
   <app-todo></app-todo>
   <app-add-new></app-add-new>
 </div>
+=======
+<div *ngIf="!isAuth" class="wrapper">
+    <mat-form-field >
+      <input matInput placeholder="Enter name" [(ngModel)]="name" type="text" >
+    </mat-form-field>
+      <button mat-stroked-button color="primary" (click)="auth()" routerLink="/game-area">
+        Lets play
+      </button>
+  </div>
+  <app-game-area *ngIf="isAuth" [name]='name'></app-game-area>
+  
+>>>>>>> c37e3c3ae1064a214a6526b24fe67bf5dfb82850
