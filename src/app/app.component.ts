@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { ITodo } from './models/todo';
 import { Title, TextS } from './models/add';
 import { User } from './models/user';
 import { FormControl, Validators } from '@angular/forms';
 import { TodoService } from './sevices/todo.service';
-=======
->>>>>>> c37e3c3ae1064a214a6526b24fe67bf5dfb82850
 
 @Component({
   selector: 'app-root',
@@ -15,7 +12,6 @@ import { TodoService } from './sevices/todo.service';
 })
 export class AppComponent implements OnInit {
 
-<<<<<<< HEAD
   title = 'Todo_list';
   todosArray: ITodo[] = [];
   useername: User[] = [];
@@ -26,15 +22,5 @@ export class AppComponent implements OnInit {
     this.todoService.getData().then((res) => {
       this.todosArray = res;
     });
-=======
-  name = '';
-  isAuth = false;
-  ngOnInit() {
-
-  }
-
-  auth() {
-    this.isAuth = true;
->>>>>>> c37e3c3ae1064a214a6526b24fe67bf5dfb82850
   }
 }
