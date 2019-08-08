@@ -1,0 +1,11 @@
+<div class="form">
+    <div class="new">
+      <mat-form-field class="w">
+        <input matInput [(ngModel)]="newTitle" placeholder="title" >
+      </mat-form-field>
+      <mat-form-field  class="w">
+        <input matInput [(ngModel)]="newText" placeholder="text" >
+      </mat-form-field>
+      <button class="w" mat-raised-button color="accent"(click)="addTodo()">Add Todo</button>
+    </div>
+  </div>
